@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-import axios from 'axios';
+import api from '../services/api';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
@@ -24,8 +24,8 @@ const LoginPage = () => {
     setError(null);
     setLoading(true);
     try {
-      const response = await axios.post('/api/auth/login', { email, password });
-      login(response.data.token, response.data.user);
+      const response = await api.post('/auth/login', { email, password });
+      login(response.data.token);
       navigate('/');
     } catch (err) {
       setError('Invalid credentials. Please try again.');

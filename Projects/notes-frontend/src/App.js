@@ -6,7 +6,12 @@ import NotesList from "./pages/NotesList";
 import NoteForm from "./pages/NoteForm";
 
 function PrivateRoute({ children }) {
-  const { isAuthenticated } = useAuth();
+  const { isAuthenticated, loading } = useAuth();
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
   return isAuthenticated() ? children : <Navigate to="/login" />;
 }
 
