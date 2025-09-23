@@ -55,7 +55,7 @@ const NoteForm = () => {
               htmlFor="title"
               className="block text-sm font-medium text-gray-700"
             >
-              Title
+              Titulo
             </label>
             <input
               id="title"
@@ -72,7 +72,7 @@ const NoteForm = () => {
               htmlFor="content"
               className="block text-sm font-medium text-gray-700"
             >
-              Content
+              Contenido
             </label>
             <textarea
               id="content"
