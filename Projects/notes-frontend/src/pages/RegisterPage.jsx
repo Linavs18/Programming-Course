@@ -18,7 +18,11 @@ const RegisterPage = () => {
       await api.post('/auth/register', { name, email, password });
       navigate('/login', { state: { message: 'Registration successful! Please log in.' } });
     } catch (err) {
-      setError('Failed to register. Please try again.');
+      if (err.response && err.response.data && err.response.data.message) {
+        setError(err.response.data.message);
+      } else {
+        setError('Failed to register. Please try again.');
+      }
       console.error(err);
     } finally {
       setLoading(false);
