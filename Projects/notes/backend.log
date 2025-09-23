@@ -1,0 +1,12 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2025-09-22T23:56:45.890Z  INFO 13368 --- [notes] [           main] co.edu.sena.notes.NotesApplication       : Starting NotesApplication v0.0.1-SNAPSHOT using Java 21.0.8 with PID 13368 (/app/Projects/notes/target/notes-0.0.1-SNAPSHOT.jar started by jules in /app/Projects/notes)
+2025-09-22T23:56:45.895Z  INFO 13368 --- [notes] [           main] co.edu.sena.notes.NotesApplication       : No active profile set, falling back to 1 default profile: "default"
