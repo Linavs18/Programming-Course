@@ -48,7 +48,7 @@ const LoginPage = () => {
               htmlFor="email"
               className="block text-sm font-medium text-gray-700"
             >
-              Correo 
+              Email address
             </label>
             <input
               id="email"
@@ -66,7 +66,7 @@ const LoginPage = () => {
               htmlFor="password"
               className="block text-sm font-medium text-gray-700"
             >
-              Contraseña
+              Password
             </label>
             <input
               id="password"
@@ -91,7 +91,7 @@ const LoginPage = () => {
           </div>
         </form>
         <p className="text-sm text-center text-gray-600">
-          No tienes una cuenta?{' '}
+          Don't have an account?{' '}
           <Link to="/register" className="font-medium text-indigo-600 hover:text-indigo-500">
             Register
           </Link>

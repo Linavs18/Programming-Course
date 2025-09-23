@@ -46,7 +46,7 @@ const NotesList = () => {
       <Navbar />
       <div className="px-4 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          <h2 className="text-2xl font-bold text-gray-900">Tus notas</h2>
+          <h2 className="text-2xl font-bold text-gray-900">Your Notes</h2>
           <button
             onClick={() => navigate('/new')}
             className="px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700"
@@ -54,7 +54,7 @@ const NotesList = () => {
             New Note
           </button>
         </div>
-        {loading && <p className="mt-4">Cargando...</p>}
+        {loading && <p className="mt-4">Loading...</p>}
         {error && <p className="mt-4 text-red-600">{error}</p>}
         {!loading && !error && (
           <div className="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 lg:grid-cols-3">

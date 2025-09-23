@@ -15,7 +15,7 @@ const Navbar = () => {
           </div>
           <div className="flex items-center">
             <span className="mr-4 text-sm text-gray-600">
-              Hola, {user ? user.name : 'Guest'}
+              Hello, {user ? user.name : 'Guest'}
             </span>
             <button
               onClick={logout}
