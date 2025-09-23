@@ -20,7 +20,6 @@ public class AuthService {
             throw new EmailAlreadyExistsException("Email already in use: " + user.getEmail());
         }
         user.setPassword(passwordEncoder.encode(user.getPassword()));
-        user.setRole("USER");
         return userRepository.save(user);
     }
 }

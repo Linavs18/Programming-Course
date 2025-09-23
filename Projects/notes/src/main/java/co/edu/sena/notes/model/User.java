@@ -34,9 +34,6 @@ public class User {
     @Column(name = "password", nullable = false)
     private String password;
 
-    @Column(nullable = false, length = 20)
-    private String role;
-
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     @JsonIgnore
     private List<Note> notes;
@@ -71,14 +68,6 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
     }
 
     public List<Note> getNotes() {
