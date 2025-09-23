@@ -55,7 +55,7 @@ const NoteForm = () => {
               htmlFor="title"
               className="block text-sm font-medium text-gray-700"
             >
-              Title
+              Titulo
             </label>
             <input
               id="title"
@@ -72,7 +72,7 @@ const NoteForm = () => {
               htmlFor="content"
               className="block text-sm font-medium text-gray-700"
             >
-              Content
+              Contenido
             </label>
             <textarea
               id="content"
@@ -98,7 +98,7 @@ const NoteForm = () => {
               disabled={loading}
               className="px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none disabled:opacity-50"
             >
-              {loading ? 'Saving...' : 'Save'}
+              {loading ? 'Saving...' : 'Guardar'}
             </button>
           </div>
         </form>
